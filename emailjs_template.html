@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 0;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #00d9ff 0%, #0099cc 100%);
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .header h2 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .content {
+            padding: 30px 20px;
+        }
+        .field {
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+        .field:last-of-type {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .label {
+            font-weight: bold;
+            color: #00d9ff;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            display: block;
+            margin-bottom: 8px;
+        }
+        .value {
+            color: #333;
+            font-size: 16px;
+            line-height: 1.5;
+            word-wrap: break-word;
+        }
+        .footer {
+            background-color: #f9f9f9;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #eee;
+            font-size: 12px;
+            color: #999;
+        }
+        .divider {
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #00d9ff, transparent);
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <div class="header">
+            <h2>📧 New Contact Form Submission</h2>
+        </div>
+
+        <!-- Content Section -->
+        <div class="content">
+            <!-- Visitor Name -->
+            <div class="field">
+                <span class="label">👤 Visitor Name</span>
+                <div class="value">{{from_name}}</div>
+            </div>
+
+            <!-- Visitor Email -->
+            <div class="field">
+                <span class="label">📧 Visitor Email</span>
+                <div class="value">{{from_email}}</div>
+            </div>
+
+            <!-- Message -->
+            <div class="field">
+                <span class="label">💬 Message</span>
+                <div class="value">{{message}}</div>
+            </div>
+
+            <div class="divider"></div>
+
+            <!-- Additional Info -->
+            <div style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #eee;">
+                <p style="margin: 0; color: #666; font-size: 14px;">
+                    <strong>This email was sent from your portfolio website contact form.</strong>
+                </p>
+                <p style="margin: 10px 0 0 0; color: #999; font-size: 12px;">
+                    If you didn't expect this email, please ignore it.
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer Section -->
+        <div class="footer">
+            <p style="margin: 0;">Powered by EmailJS | Portfolio Contact Form</p>
+        </div>
+    </div>
+</body>
+</html>
