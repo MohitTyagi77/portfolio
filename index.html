@@ -405,7 +405,7 @@ footer { border-top: 1px solid var(--zinc-900); background: black; padding: 48px
         <a href="https://www.linkedin.com/in/mohit-tyagi98/" target="_blank" rel="noreferrer" class="icon-btn" aria-label="LinkedIn">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
         </a>
-        <a href="https://github.com/MohitTyagi77" target="_blank" rel="noreferrer" class="icon-btn" aria-label="GitHub">
+        <a href="https://github.com/MohitTyagi77/alphaedge-quant-trading-system" target="_blank" rel="noreferrer" class="icon-btn" aria-label="GitHub">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
         </a>
         <button class="ghost-btn" onclick="scrollTo('projects')">
@@ -425,13 +425,13 @@ footer { border-top: 1px solid var(--zinc-900); background: black; padding: 48px
   <div class="about-grid">
     <div class="fade-up delay-1">
       <p class="about-text">My journey in technology started with a fascination for patterns—whether in lines of code or stock market tickers. Today, I specialize in building systems that can "see" and "think."</p>
-      <p class="about-text">From deploying a <span class="wh">Quantitative Trading bot</span> that yielded a 27% return with a 7.56 Sharpe Ratio, to building a <span class="wh">Real-Time AI Proctoring platform</span> used for live exam integrity monitoring, I thrive where performance and precision are paramount.</p>
+      <p class="about-text">From deploying a <span class="wh">Quantitative Trading bot</span> that yielded a 47% return with a 2.17 Sharpe Ratio, to building a <span class="wh">Real-Time AI Proctoring platform</span> used for live exam integrity monitoring, I thrive where performance and precision are paramount.</p>
       <p class="about-text">I am a lifelong learner with a strong foundation in <span class="wh">Data Structures & Algorithms</span> (150+ solved) and a deep interest in the intersection of IoT and Machine Learning.</p>
       <div class="stat-grid">
-        <div class="stat-card"><div class="stat-num">27%</div><div class="stat-label">Portfolio Return</div></div>
-        <div class="stat-card"><div class="stat-num">7.56</div><div class="stat-label">Sharpe Ratio</div></div>
-        <div class="stat-card"><div class="stat-num">56</div><div class="stat-label">Automated Trades</div></div>
-        <div class="stat-card"><div class="stat-num">2.36%</div><div class="stat-label">Max Drawdown</div></div>
+        <div class="stat-card"><div class="stat-num">47%</div><div class="stat-label">Portfolio Return</div></div>
+        <div class="stat-card"><div class="stat-num">2.17</div><div class="stat-label">Sharpe Ratio</div></div>
+        <div class="stat-card"><div class="stat-num">323</div><div class="stat-label">Automated Trades</div></div>
+        <div class="stat-card"><div class="stat-num">10.75%</div><div class="stat-label">Max Drawdown</div></div>
       </div>
     </div>
     <div class="fade-up delay-2">
@@ -516,25 +516,61 @@ footer { border-top: 1px solid var(--zinc-900); background: black; padding: 48px
     <!-- Project 1 -->
     <div class="project-row fade-up">
       <div class="project-info">
-        <div class="project-role">Lead Developer</div>
-        <div class="project-title">Quantitative Trading System</div>
-        <p class="project-desc">Generated ₹81,462 net profit (27% return) executing 56 automated trades with a 75% win rate on a ₹3L paper portfolio. Automated technical pattern detection across 50+ stocks via Angel One SmartAPI for live 5-minute candlestick ingestion. Architected a modular strategy engine separating signal generation, risk management, and order execution layers.</p>
+        <div class="project-role">Algorithmic Trading</div>
+        <h3 class="project-title">AlphaEdge — Quantitative Trading System</h3>
+
+        <p class="project-desc">
+          Built a quantitative intraday trading and backtesting system for 60+ NSE stocks using 5-minute data.
+          Executed 323 trades on ₹3L capital, generating ₹143K profit (~47% return) with 57% win rate,
+          Sharpe Ratio of 2.17 and max drawdown of 10.75%.
+        </p>
+
+        <p class="project-desc">
+          Designed a realistic cost-aware backtesting engine including brokerage, STT, GST and slippage,
+          revealing over 55% profit erosion due to transaction costs. Implemented candlestick pattern detection
+          (engulfing, morning/evening star) with ATR-based targets, trailing stop loss and time-based exits.
+        </p>
+
         <div class="tech-tags">
-          <span class="tech-tag">Python</span><span class="tech-tag">Pandas</span><span class="tech-tag">NumPy</span><span class="tech-tag">SmartAPI</span><span class="tech-tag">Technical Indicators</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag">Pandas</span>
+          <span class="tech-tag">NumPy</span>
+          <span class="tech-tag">Backtesting</span>
+          <span class="tech-tag">Quant</span>
         </div>
-        <a href="https://github.com/MohitTyagi77/Quantitative_Trading_System" target="_blank" rel="noreferrer" class="project-link">
-          View Code
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+
+        <a href="https://github.com/MohitTyagi77/alphaedge-quant-trading-system" 
+           target="_blank" 
+           class="project-link">
+          View on GitHub
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path d="M7 17l9.2-9.2M17 17V7H7"/>
+          </svg>
         </a>
       </div>
-      <div class="project-card">
-        <div class="project-card-bg">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+
+      <div class="project-card" style="aspect-ratio: auto;">
+        <!-- Screenshot -->
+        <img src="output.png" alt="Trading Strategy Results"
+             style="width:100%; border-radius:8px; margin-bottom:24px;">
+
+        <!-- Stats -->
+        <div class="stat-item">
+          <div class="stat-dot"></div>
+          <div class="stat-text">₹143K Profit</div>
         </div>
-        <div class="stat-item"><div class="stat-dot"></div><span class="stat-text">27% Return (₹81,462)</span></div>
-        <div class="stat-item"><div class="stat-dot"></div><span class="stat-text">7.56 Sharpe Ratio</span></div>
-        <div class="stat-item"><div class="stat-dot"></div><span class="stat-text">75% Win Rate</span></div>
-        <div class="stat-item"><div class="stat-dot"></div><span class="stat-text">2.36% Max Drawdown</span></div>
+        <div class="stat-item">
+          <div class="stat-dot"></div>
+          <div class="stat-text">47% Return</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-dot"></div>
+          <div class="stat-text">323 Trades</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-dot"></div>
+          <div class="stat-text">57% Win Rate</div>
+        </div>
       </div>
     </div>
 
